@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/gamesFragment">
+
+    <fragment
+        android:id="@+id/gamesFragment"
+        android:name="com.capsl.miniproject.ui.games.GamesFragment"
+        android:label="@string/title_screen_games"
+        tools:layout="@layout/fragment_games">
+        <action
+            android:id="@+id/showStagesFragment"
+            app:destination="@id/stagesFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/stagesFragment"
+        android:name="com.capsl.miniproject.ui.stages.StagesFragment"
+        android:label="@string/title_screen_stages"
+        tools:layout="@layout/fragment_stages">
+        <action
+            android:id="@+id/showPlayersFragment"
+            app:destination="@id/playersFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/playersFragment"
+        android:name="com.capsl.miniproject.ui.players.PlayersFragment"
+        tools:layout="@layout/fragment_players">
+
+
+    </fragment>
+
+</navigation>

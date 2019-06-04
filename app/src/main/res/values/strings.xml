@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MiniProject</string>
+    <string name="title_screen_games">Choose a game</string>
+    <string name="title_screen_stages">Add tournament information</string>
+</resources>
